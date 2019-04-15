@@ -1,0 +1,128 @@
+    1  ./autorun.sh 
+    2  sudo cp devops/backup/presetup.txt .
+    3  sudo chown dinesh:dinesh presetup.txt 
+    4  vi presetup.txt 
+    5  ./presetup.txt 
+    6  kubeadm -version
+    7  sudo systemctl start jenkins
+    8  sudo systemctl status jenkins
+    9  docker
+   10  docker images
+   11  sudo reboot
+   12  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+   13  ping  122.172.25.73
+   14  sudo systemctl status jenkins
+   15  sudo systemctl stop jenkins
+   16  sudo systemctl start jenkins
+   17  sudo systemctl stop jenkins
+   18  sudo systemctl start jenkins
+   19  docker images
+   20  pwd
+   21  ls -l
+   22  pwd
+   23  ls -ltr
+   24  mkdir devops
+   25  cd devops/
+   26  ls -ltr
+   27  cd devops/
+   28  git config -l
+   29  pipeline {
+   30  }
+   31  ssh-keygen
+   32  ssh-keygen -t rsa -b 4096 "dineshpsingh@yahoo.com"
+   33  ssh-keygen -t rsa -b 4096 -C "dineshpsingh@yahoo.com"
+   34  pwd
+   35  cd .ssh
+   36  ls -ltr
+   37  mkdir .ssh
+   38  mv id_rsa_gitgub* .ssh/
+   39  vi .ssh/id_rsa_gitgub.pub 
+   40  sudo cp .ssh/id_rsa_gitgub.pub ~/devops/
+   41  eval "$(ssh-agent -s)"
+   42  ssh-add -K ~/.ssh/id_rsa_gitgub
+   43  ssh-add -k ~/.ssh/id_rsa_gitgub
+   44  ssh -vT git@github.com
+   45  ssh -T git@github.com
+   46  pwd
+   47  git clone  https://github.com/dineshpsingh16/lesson2.git
+   48  cd lesson2/
+   49  ls -ltr
+   50  touch test.txt
+   51  git status
+   52  git add .
+   53  git commit . -m "Added from local"
+   54  git config list
+   55  git config -l
+   56  git config --global ssh.identity /home/dinesh/.ssh/id_rsa_gitgub
+   57  git config -l
+   58  git commit . -m "Added from local"
+   59  git config --global user.email "dineshpsingh@yahoo.com"
+   60  git config --global user.username "dineshpsingh16"
+   61  git commit . -m "Added from local"
+   62  ls -l
+   63  git push
+   64  git
+   65  git -version
+   66  git --version
+   67  pwd
+   68  ls -ltra
+   69  git log
+   70  pwd
+   71  ls -ltr
+   72  git log
+   73  vi test.txt 
+   74  git status
+   75  git add .
+   76  git commit
+   77  git status
+   78  git push
+   79  git config --global user.email "dineshpsingh@yahoo.com"
+   80  git config --global user.name "Dinesh"
+   81  git config -l
+   82  git push
+   83  git show
+   84  git log
+   85  git show
+   86  git show  | more
+   87  git status
+   88  vi test.txt 
+   89  git status
+   90  git stash
+   91  git status
+   92  git checkout test.txt
+   93  git status
+   94  vi test.txt 
+   95  git status
+   96  git reset --hard
+   97  git status
+   98  git log
+   99  git reset --hard fa00634ce89d898c6054c8fbfaaaaf15c36419e4
+  100  git status
+  101  git log
+  102  git status
+  103  git
+  104  git branch -l
+  105  git branch develop
+  106  git branch -l
+  107  git checkout develop
+  108  git branch -l
+  109  git log
+  110  ls -ltr
+  111  vi test.xtx
+  112  git status
+  113  git add .
+  114  git status
+  115  git commit
+  116  git status
+  117  git log
+  118  git branch -l
+  119  git diff master
+  120  git checkout master
+  121  git merge develop
+  122  git log
+  123  git branch -D develop
+  124  git tag -l
+  125  git tag v1.0
+  126  git tag -l
+  127  ls -ltr
+  128  history > hist.txt

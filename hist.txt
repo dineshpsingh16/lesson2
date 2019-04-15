@@ -126,3 +126,16 @@
   126  git tag -l
   127  ls -ltr
   128  history > hist.txt
+  129  vi hist.txt 
+  130  git config -l
+  131  git remove origin
+  132  git remote remove origin
+  133  git remote add origin git@github.com:dineshpsingh16/lesson2.git
+  134  git config -l
+  135  git status
+  136  git add .
+  137  git commit . -m "adding steps of this lesson"
+  138  git push
+  139  git push --set-upstream origin master
+  140  git status
+  141  history > hist.txt
